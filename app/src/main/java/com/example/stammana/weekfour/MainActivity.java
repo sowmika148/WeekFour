@@ -21,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openWebsite(View view) {
-        Toast.makeText(getApplicationContext(), "Not yet developed", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(getApplicationContext(), BrowserActivity.class);
+        startActivity(intent);
     }
 
     public void sendSMS(View view) {
